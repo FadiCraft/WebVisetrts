@@ -24,7 +24,7 @@ const randomWait = (min, max) => Math.floor(Math.random() * (max - min + 1) + mi
 
     // روابطك
     const urls = [
-        'https://kiroview.blogspot.com/',
+        'https://urlto.me/2L3Wu',
         'https://www.kirozozo.xyz/'
     ];
 
