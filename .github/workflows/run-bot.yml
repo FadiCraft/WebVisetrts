@@ -3,7 +3,7 @@ name: Traffic Bot Runner
 on:
   workflow_dispatch: 
   schedule:
-    - cron: '0 */1 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   run-puppeteer:
