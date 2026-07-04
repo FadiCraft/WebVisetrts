@@ -25,8 +25,8 @@ const randomWait = (min, max) => Math.floor(Math.random() * (max - min + 1) + mi
     // روابطك
     const urls = [
         'https://www.effectivecpmnetwork.com/uh3kntmp?key=6987f3e883aa91cb2123ef65ff683dae',
-       'https://www.effectivecpmnetwork.com/yaf3q826?key=18f1cfc726fc2f635d92b973e9a7d87c'
-        
+       'https://www.effectivecpmnetwork.com/yaf3q826?key=18f1cfc726fc2f635d92b973e9a7d87c',
+        'https://wfegsrdfbg.blogspot.com/'
     ];
 
     for (let url of urls) {
