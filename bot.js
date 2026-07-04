@@ -24,8 +24,8 @@ const randomWait = (min, max) => Math.floor(Math.random() * (max - min + 1) + mi
 
     // روابطك
     const urls = [
-        'https://urlto.me/2L3Wu',
-        'https://www.kirozozo.xyz/'
+        'https://www.effectivecpmnetwork.com/uh3kntmp?key=6987f3e883aa91cb2123ef65ff683dae'
+        
     ];
 
     for (let url of urls) {
