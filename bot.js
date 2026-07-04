@@ -5,22 +5,24 @@ const randomWait = (min, max) => Math.floor(Math.random() * (max - min + 1) + mi
 (async () => {
     console.log('بدء تشغيل السكربت على GitHub Actions...');
 
-    // التعديل الأهم: يجب أن يكون headless: true مع إضافة هذه الصلاحيات
+    // إعدادات ضرورية جداً ليعمل على سيرفرات GitHub (Linux)
     const browser = await puppeteer.launch({ 
         headless: true, 
         args: [
             '--no-sandbox', 
             '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage'
+            '--disable-dev-shm-usage',
+            '--disable-gpu'
         ]
     }); 
     
     const page = await browser.newPage();
     await page.setViewport({ width: 1366, height: 768 });
     
-    // إخفاء أن المتصفح آلي قدر الإمكان
+    // إخفاء أن المتصفح آلي
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
+    // روابطك
     const urls = [
         'https://kiroview.blogspot.com/',
         'https://www.kirozozo.xyz/'
