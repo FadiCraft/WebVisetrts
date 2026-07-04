@@ -1,15 +1,13 @@
 name: Traffic Bot Runner
 
-# متى يعمل السكربت؟
 on:
-  workflow_dispatch: # يسمح لك بتشغيله يدوياً بضغطة زر من صفحة Actions
+  workflow_dispatch: 
   schedule:
-    # يعمل تلقائياً كل 6 ساعات (يمكنك تغييرها)
     - cron: '0 */6 * * *'
 
 jobs:
   run-puppeteer:
-    runs-on: ubuntu-latest # خادم لينكس
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout Code
@@ -18,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # استخدام إصدار حديث من Node.js
+          node-version: '20'
           
       - name: Install Dependencies
         run: npm install
